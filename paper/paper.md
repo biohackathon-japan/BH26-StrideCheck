@@ -58,11 +58,11 @@ video measurement (Table 1).
 
 | Dataset | Content | Used for |
 |---|---|---|
-| Wu et al. 2026 [@citesAsDataSource:Wu2026] | 142 endurance runners, 12-month prospective follow-up, weekly injury records, force-based gait timing at baseline | Rhythm types; rhythm-based prediction |
-| Loh et al. 2025 [@citesAsDataSource:Loh2025] | 81 runners (26 injured within 12 months), 2-D video angles at baseline | Form types; form-based prediction |
-| Loh & Kong 2026 [@citesAsDataSource:LohKong2026] | 154 injured and 44 uninjured runners, 2-D video angles | Angle definitions and distributions |
-| Fukuchi et al. 2017 [@citesAsDataSource:Fukuchi2017; @citesAsDataSource:Fukuchi2017data] | 39 runners, treadmill 2.5-4.5 m/s, markers and force plate | Joint-load models; validation of event detection |
-| Wang et al. 2022-2023 [@citesAsDataSource:Wang2022data; @citesAsDataSource:Wang2022video; @citesAsRelated:Wang2023] | Treadmill running at three speeds (6.3-9.9 km/h), front and side video (33 fps) recorded with Qualisys markers and a split-belt force treadmill | Validation of the video measurement (24 trials, 9 runners) |
+| Injury cohort [@citesAsDataSource:Wu2026] | 142 endurance runners, 12-month prospective follow-up, weekly injury records, force-based gait timing at baseline | Rhythm types; rhythm-based prediction |
+| Injury cohort [@citesAsDataSource:Loh2025] | 81 runners (26 injured within 12 months), 2-D video angles at baseline | Form types; form-based prediction |
+| Case-control [@citesAsDataSource:LohKong2026] | 154 injured and 44 uninjured runners, 2-D video angles | Angle definitions and distributions |
+| Biomechanics [@citesAsDataSource:Fukuchi2017; @citesAsDataSource:Fukuchi2017data] | 39 runners, treadmill 2.5-4.5 m/s, markers and force plate | Joint-load models; validation of event detection |
+| Validation [@citesAsDataSource:Wang2022data; @citesAsDataSource:Wang2022video; @citesAsRelated:Wang2023] | Treadmill running at three speeds (6.3-9.9 km/h), front and side video (33 fps) recorded with Qualisys markers and a split-belt force treadmill | Validation of the video measurement (24 trials, 9 runners) |
 
 Table: Datasets.  The Loh datasets are CC BY-NC; the others are CC BY 4.0
 or were used for validation only and are not redistributed.
@@ -108,8 +108,7 @@ over the video so that users can see these steps.
 ## Validation
 
 Event detection was first checked on the Fukuchi markers, laid out as pose
-landmarks (hip joint centre after Harrington et al.
-[@usesMethodIn:Harrington2007]), at 33-120 fps with added noise.  The whole
+landmarks (hip joint centre as in [@usesMethodIn:Harrington2007]), at 33-120 fps with added noise.  The whole
 pipeline was then checked on the Wang et al. videos: the Qualisys recording
 starts with the videos (offset 3 ms, median), the force treadmill gives the
 true contacts of each leg, and the markers give the true angles, computed
